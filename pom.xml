@@ -9,8 +9,8 @@
     <version>3.0.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <build>
         <defaultGoal>clean package</defaultGoal>
@@ -78,7 +78,10 @@
         <repository>
             <id>codemc-repo</id>
             <url>https://repo.codemc.org/repository/maven-public/</url>
-            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>citizenz</id>
+            <url>https://repo.citizensnpcs.co/</url>
         </repository>
     </repositories>
 
@@ -93,6 +96,12 @@
             <groupId>net.milkbowl.vault</groupId>
             <artifactId>VaultAPI</artifactId>
             <version>1.7</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.citizensnpcs</groupId>
+            <artifactId>citizensapi</artifactId>
+            <version>2.0.27-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
