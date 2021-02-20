@@ -190,7 +190,7 @@ public class Item implements ConfigurationSerializable {
 
     @Override
     public Map<String, Object> serialize() {
-        Map map = new TreeMap();
+        Map<String, Object> map = new TreeMap<>();
         map.put("MaterialID", id);
         map.put("DisplayName", name);
         map.put("Durability", durability);
